@@ -101,6 +101,7 @@ a { color: var(--teal); text-underline-offset: 3px; }
 .staff-group > h2 { padding-bottom: 9px; border-bottom: 1px solid var(--line); }
 .staff-profile { display: grid; grid-template-columns: 96px 1fr; gap: 19px; align-items: start; padding: 20px 0; margin: 0; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: transparent; box-shadow: none; }
 .staff-profile img { width: 96px; height: 96px; object-fit: cover; object-position: center top; border: 3px solid #fff; border-radius: 16px; box-shadow: 0 8px 20px rgba(16,37,54,.16); }
+.staff-profile img.staff-photo-luthfan { object-position: center 18%; }
 .staff-avatar { display: grid; width: 96px; height: 96px; place-items: center; border: 3px solid #fff; border-radius: 16px; color: #eaffff; background: linear-gradient(135deg, var(--teal), var(--violet)); box-shadow: 0 8px 20px rgba(16,37,54,.16); font: 800 1.25rem "DM Mono", monospace; }
 .staff-profile h3 { margin: 0; color: var(--ink); font-size: 1.08rem; line-height: 1.28; }
 .staff-profile p { margin: 5px 0 0; }
