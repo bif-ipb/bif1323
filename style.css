@@ -101,6 +101,7 @@ a { color: var(--teal); text-underline-offset: 3px; }
 .staff-group > h2 { padding-bottom: 9px; border-bottom: 1px solid var(--line); }
 .staff-profile { display: grid; grid-template-columns: 96px 1fr; gap: 19px; align-items: start; padding: 20px; margin-bottom: 12px; border: 1px solid rgba(217,225,232,.9); border-radius: 16px; background: rgba(255,255,255,.86); box-shadow: 0 10px 24px rgba(16,37,54,.045); }
 .staff-profile img { width: 96px; height: 96px; object-fit: cover; object-position: center top; border: 3px solid #fff; border-radius: 18px; box-shadow: 0 10px 24px rgba(16,37,54,.16); }
+.staff-avatar { display: grid; width: 96px; height: 96px; place-items: center; border: 3px solid #fff; border-radius: 18px; color: #eaffff; background: linear-gradient(135deg, var(--teal), var(--violet)); box-shadow: 0 10px 24px rgba(16,37,54,.16); font: 800 1.35rem "DM Mono", monospace; }
 .staff-profile h3 { color: var(--ink); font-size: 1.08rem; line-height: 1.28; }
 .staff-profile p { margin: 5px 0 0; }
 .staff-role { color: var(--teal); font-weight: 800; }
@@ -128,4 +129,5 @@ a { color: var(--teal); text-underline-offset: 3px; }
   .lead { font-size: 1rem; }
   .staff-profile { grid-template-columns: 72px 1fr; gap: 15px; }
   .staff-profile img { width: 72px; height: 72px; }
+  .staff-avatar { width: 72px; height: 72px; border-radius: 15px; font-size: 1.05rem; }
 }
