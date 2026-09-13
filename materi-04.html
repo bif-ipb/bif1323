@@ -16,8 +16,30 @@
   </aside>
   <main id="content" class="content">
     <article>
-      <header class="page-header"><p class="breadcrumb"><a href="materi.html">MATERI</a> / PERTEMUAN 04</p><h1>SQL Dasar</h1><p class="lead">Materi pertemuan akan ditambahkan kemudian.</p></header>
-      <section><div class="callout"><strong>Dalam persiapan</strong><p>Ringkasan, tujuan praktikum, dan dokumen pendukung belum dipublikasikan.</p></div></section>
+      <header class="page-header"><p class="breadcrumb"><a href="materi.html">MATERI</a> / PERTEMUAN 04</p><h1>SQL Dasar</h1><p class="lead">Membuat struktur tabel dan mengelola data biologis menggunakan perintah dasar SQL pada PostgreSQL.</p></header>
+      <section aria-labelledby="tujuan-praktikum">
+        <h2 id="tujuan-praktikum">Tujuan Praktikum</h2>
+        <ol class="learning-objectives">
+          <li>Membuat dan mengubah struktur tabel data biologis menggunakan <code>CREATE TABLE</code> dan <code>ALTER TABLE</code>.</li>
+          <li>Menambahkan, menampilkan, memperbarui, dan menghapus data menggunakan <code>INSERT</code>, <code>SELECT</code>, <code>UPDATE</code>, dan <code>DELETE</code>.</li>
+          <li>Menjalankan skrip SQL serta memeriksa hasil operasi dan penerapan <em>constraint</em> pada PostgreSQL.</li>
+        </ol>
+      </section>
+      <section aria-labelledby="pendahuluan">
+        <h2 id="pendahuluan">Pendahuluan</h2>
+        <p>Pada pertemuan sebelumnya, rancangan basis data telah dipetakan menjadi tabel, atribut, <em>primary key</em>, <em>foreign key</em>, dan <em>integrity constraint</em>. Rancangan tersebut selanjutnya diwujudkan dan dikelola pada <em>database management system</em> (DBMS) menggunakan <em>Structured Query Language</em> (SQL).</p>
+        <p>Praktikum ini menggunakan data biologis berupa katalog gen <em>Plasmodium falciparum</em> 3D7 dan anotasi <em>pathway</em>. Data tersebut menyimpan identitas gen, lokasi gen pada sekuens referensi, arah <em>strand</em>, serta hubungan gen dengan <em>pathway</em>. Dataset yang digunakan merupakan subset gen yang berkaitan dengan tiga <em>pathway</em>, sehingga hasil pengamatan dan interpretasi hanya berlaku dalam subset ini.</p>
+        <p>Mahasiswa akan menggunakan <code>CREATE TABLE</code> untuk membuat tabel, <code>ALTER TABLE</code> untuk mengubah struktur tabel, serta <code>INSERT</code>, <code>SELECT</code>, <code>UPDATE</code>, dan <code>DELETE</code> untuk mengelola data. Setiap perintah dijalankan secara bertahap agar perubahan pada struktur dan isi basis data dapat diamati.</p>
+      </section>
+      <section class="module-section" aria-labelledby="modul-pertemuan-04">
+        <div class="module-heading">
+          <div><p class="eyebrow">MODUL PRAKTIKUM</p><h2 id="modul-pertemuan-04">Pertemuan 04</h2></div>
+          <a class="module-link" href="assets/modules/pertemuan-04.pdf" target="_blank" rel="noopener">Buka PDF</a>
+        </div>
+        <div class="pdf-viewer">
+          <iframe src="assets/modules/pertemuan-04.pdf" title="Modul Praktikum Pertemuan 04: SQL Dasar" loading="lazy"></iframe>
+        </div>
+      </section>
     </article>
     <footer>Program Studi Bioinformatika &middot; FMIPA &middot; IPB University</footer>
   </main>
