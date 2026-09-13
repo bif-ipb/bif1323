@@ -1,0 +1,7 @@
+.calendar-section { padding-top: 30px !important; }
+.calendar-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; margin-bottom: 13px; }
+.calendar-caption p { margin: 0; color: var(--muted); }
+.calendar-caption .eyebrow { color: var(--jade); font: .68rem "DM Mono", monospace; letter-spacing: .1em; }
+.calendar-frame { overflow: hidden; border: 1px solid #cbd9c8; border-radius: 10px; background: var(--cream); box-shadow: 0 18px 35px rgba(29, 61, 47, .09); }
+.calendar-frame iframe { display: block; width: 100%; min-height: 680px; border: 0; background: white; }
+@media (max-width: 800px) { .calendar-caption { display: block; }.calendar-caption .eyebrow { margin-bottom: 5px; }.calendar-frame { border-radius: 7px; }.calendar-frame iframe { min-height: 600px; } }

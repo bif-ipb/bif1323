@@ -1,0 +1,72 @@
+.home-course-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, .92fr);
+  min-height: 500px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 55px rgba(16, 37, 54, .11);
+}
+.home-copy { position: relative; z-index: 2; align-self: center; padding: 54px 0 54px 46px; }
+.home-course-card h1 { max-width: 590px; font-size: clamp(2.45rem, 4.55vw, 4.1rem); }
+.home-course-card h1 span { display: block; margin-top: 8px; color: var(--teal); font-size: .48em; }
+.home-course-card .lead { max-width: 590px; }
+.home-meta { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.home-meta span { padding: 5px 9px; border: 1px solid rgba(15,143,140,.22); border-radius: 8px; color: #0b5f68; background: var(--soft); font: .67rem "DM Mono", monospace; }
+
+.hero-visual {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at 72% 18%, rgba(65,199,215,.28), transparent 18rem), linear-gradient(145deg, #102536, #0b1720);
+}
+.hero-visual img { display: none; }
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  inset: 34px;
+  border: 1px solid rgba(65,199,215,.26);
+  border-radius: 18px;
+  background: linear-gradient(rgba(65,199,215,.18) 1px, transparent 1px), linear-gradient(90deg, rgba(65,199,215,.18) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.hero-visual::after {
+  content: "gene_expression";
+  position: absolute;
+  left: 54px;
+  right: 54px;
+  top: 62px;
+  padding: 14px 16px;
+  border: 1px solid rgba(65,199,215,.38);
+  border-radius: 12px;
+  color: #eaffff;
+  background: rgba(255,255,255,.08);
+  box-shadow: 0 22px 50px rgba(0,0,0,.22);
+  font: 700 .92rem "DM Mono", monospace;
+}
+.orbit { position: absolute; z-index: 1; display: block; width: 120px; height: 120px; border: 1px solid rgba(240,184,75,.44); border-radius: 18px; transform: rotate(8deg); }
+.orbit-one { right: 74px; bottom: 96px; }
+.orbit-two { right: 132px; bottom: 154px; width: 160px; height: 160px; border-color: rgba(65,199,215,.34); transform: rotate(-8deg); }
+.data-chip { position: absolute; z-index: 2; padding: 8px 10px; border: 1px solid rgba(255,255,255,.24); border-radius: 8px; color: #eaffff; background: rgba(11,23,32,.78); box-shadow: 0 10px 24px rgba(0,0,0,.2); font: .62rem "DM Mono", monospace; }
+.chip-one { top: 146px; left: 72px; }
+.chip-two { right: 58px; bottom: 58px; }
+
+.announcement-section { padding-top: 32px !important; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 16px; margin-bottom: 13px; }
+.section-heading h2 { margin: 0; }
+.section-heading h2::before { display: none; }
+.announcement strong { color: var(--ink); }
+.announcement p { font-size: .94rem; }
+
+@media (max-width: 800px) {
+  .home-course-card { display: block; min-height: 0; }
+  .home-copy { padding: 34px 22px 29px; }
+  .home-course-card h1 { font-size: clamp(2.2rem, 10vw, 3.2rem); }
+  .hero-visual { height: 260px; }
+  .hero-visual::before { inset: 22px; }
+  .hero-visual::after { left: 34px; right: 34px; top: 42px; }
+  .chip-one { top: 120px; left: 42px; }
+  .chip-two { right: 32px; bottom: 35px; }
+}
