@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pembersihan dan Standardisasi Data Biologis | BIF1323</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="style.css?v=materi-6" /><link rel="stylesheet" href="module.css?v=module-3" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Lewati navigasi</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  <aside id="sidebar" class="sidebar">
+    <a class="site-title" href="index.html"><span class="site-mark" aria-hidden="true"></span><span class="site-brand"><strong>Program Studi Bioinformatika</strong><small>Fakultas Matematika dan Ilmu Pengetahuan Alam<br />IPB University</small></span></a>
+    <label class="search-box" for="navigation-search"><span class="visually-hidden">Cari navigasi</span><input id="navigation-search" type="search" placeholder="Cari materi" autocomplete="off" /><span aria-hidden="true">/</span></label><p id="no-results" class="no-results" hidden>Menu tidak ditemukan.</p>
+<nav class="course-nav" aria-label="Navigasi praktikum"><a data-search="beranda home" href="index.html">Beranda</a><a data-search="staff professor asisten pengajar kontak" href="staff.html">Staff</a><a class="active" aria-current="page" data-search="materi modul pertemuan" href="materi.html">Materi Praktikum</a><a data-search="proyek kelompok" href="proyek.html">Proyek Kelompok</a><a data-search="tools referensi drawio postgresql" href="referensi.html">Referensi dan Tools</a><a data-search="kalender jadwal" href="kalender.html">Kalender</a></nav>
+    <div class="sidebar-footer"><a href="https://bioinformatika.ipb.ac.id/" target="_blank" rel="noopener">Web Bioinformatika IPB University</a><span>BIF1323</span></div>
+  </aside>
+  <main id="content" class="content">
+    <article>
+      <header class="page-header"><p class="breadcrumb"><a href="materi.html">MATERI</a> / PERTEMUAN 06</p><h1>Pembersihan dan Standardisasi Data Biologis</h1><p class="lead">Membersihkan, memadankan, dan memvalidasi integrasi data biologis tanpa menghilangkan keterlacakan ke data mentah.</p></header>
+      <section aria-labelledby="tujuan-praktikum">
+        <h2 id="tujuan-praktikum">Tujuan Praktikum</h2>
+        <ol class="learning-objectives">
+          <li>Mengidentifikasi nilai kosong, perbedaan format, duplikat identik, dan rekaman yang bertentangan.</li>
+          <li>Menerapkan aturan pembersihan tanpa menimpa data mentah.</li>
+          <li>Menggunakan tabel pemetaan untuk membedakan pasangan <em>identifier</em> yang unik, tanpa mapping, dan ambigu.</li>
+          <li>Memvalidasi hasil integrasi serta menjelaskan penyebab nilai <code>NULL</code> dan perubahan jumlah baris.</li>
+        </ol>
+      </section>
+      <section aria-labelledby="pendahuluan">
+        <h2 id="pendahuluan">Pendahuluan</h2>
+        <p>Pada Pertemuan 5, mahasiswa menggunakan <code>JOIN</code> untuk menghubungkan data RNA-seq, skor mutagenesis, dan anotasi biologis berdasarkan <em>identifier</em>. Keberhasilan <em>query</em> belum menjamin bahwa pasangan yang terbentuk sudah benar. Spasi tambahan dapat menggagalkan pencocokan, sedangkan duplikasi dan pemetaan <em>identifier</em> yang tidak unik dapat memperbanyak baris hasil.</p>
+        <p>Pertemuan 6 melanjutkan pekerjaan tersebut dari sisi kualitas data. Pertanyaan utamanya adalah bagaimana membersihkan dan memadankan dua sumber data biologis agar hasil integrasinya konsisten dan dapat ditelusuri kembali ke rekaman sumber. Praktikum ini memenuhi cakupan Sub-CPMK6 dalam RPS, yaitu pembersihan dan integrasi data biologi molekuler pada skenario basis data.</p>
+        <p>Data numerik dalam latihan berasal dari subset BioSQLite, sedangkan kode LAB, tabel pemetaan, dan gangguan kualitas merupakan simulasi pembelajaran. Setiap keputusan pembersihan harus disertai bukti, sementara data mentah tetap dipertahankan agar hasil dapat diperiksa kembali. Hasil latihan tidak digunakan untuk menarik kesimpulan biologis tentang gen tertentu.</p>
+      </section>
+      <section class="module-section" aria-labelledby="modul-pertemuan-06">
+        <div class="module-heading">
+          <div><p class="eyebrow">MODUL PRAKTIKUM</p><h2 id="modul-pertemuan-06">Pertemuan 06</h2></div>
+          <a class="module-link" href="assets/modules/pertemuan-06.pdf" target="_blank" rel="noopener">Buka PDF</a>
+        </div>
+        <div class="pdf-viewer">
+          <iframe src="assets/modules/pertemuan-06.pdf" title="Modul Praktikum Pertemuan 06: Pembersihan dan Standardisasi Data Biologis" loading="lazy"></iframe>
+        </div>
+      </section>
+    </article>
+    <footer>Program Studi Bioinformatika &middot; FMIPA &middot; IPB University</footer>
+  </main>
+  <script src="script.js?v=global-ui-1"></script>
+</body>
+</html>
