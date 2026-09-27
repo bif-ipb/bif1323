@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQL Lanjut dan Query Biologis | BIF1323</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="style.css?v=materi-5" /><link rel="stylesheet" href="module.css?v=module-3" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Lewati navigasi</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  <aside id="sidebar" class="sidebar">
+    <a class="site-title" href="index.html"><span class="site-mark" aria-hidden="true"></span><span class="site-brand"><strong>Program Studi Bioinformatika</strong><small>Fakultas Matematika dan Ilmu Pengetahuan Alam<br />IPB University</small></span></a>
+    <label class="search-box" for="navigation-search"><span class="visually-hidden">Cari navigasi</span><input id="navigation-search" type="search" placeholder="Cari materi" autocomplete="off" /><span aria-hidden="true">/</span></label><p id="no-results" class="no-results" hidden>Menu tidak ditemukan.</p>
+<nav class="course-nav" aria-label="Navigasi praktikum"><a data-search="beranda home" href="index.html">Beranda</a><a data-search="staff professor asisten pengajar kontak" href="staff.html">Staff</a><a class="active" aria-current="page" data-search="materi modul pertemuan" href="materi.html">Materi Praktikum</a><a data-search="proyek kelompok" href="proyek.html">Proyek Kelompok</a><a data-search="tools referensi drawio postgresql" href="referensi.html">Referensi dan Tools</a><a data-search="kalender jadwal" href="kalender.html">Kalender</a></nav>
+    <div class="sidebar-footer"><a href="https://bioinformatika.ipb.ac.id/" target="_blank" rel="noopener">Web Bioinformatika IPB University</a><span>BIF1323</span></div>
+  </aside>
+  <main id="content" class="content">
+    <article>
+      <header class="page-header"><p class="breadcrumb"><a href="materi.html">MATERI</a> / PERTEMUAN 05</p><h1>SQL Lanjut dan Query Biologis</h1><p class="lead">Menghubungkan, menyaring, merangkum, dan menginterpretasikan data biologis dari beberapa tabel menggunakan query SQL lanjut.</p></header>
+      <section aria-labelledby="tujuan-praktikum">
+        <h2 id="tujuan-praktikum">Tujuan Praktikum</h2>
+        <ol class="learning-objectives">
+          <li>Memilih dan menggunakan <code>INNER JOIN</code>, <code>LEFT JOIN</code>, <code>RIGHT JOIN</code>, <code>FULL OUTER JOIN</code>, <code>CROSS JOIN</code>, dan <em>self join</em> sesuai kebutuhan penggabungan data.</li>
+          <li>Menggunakan <code>WHERE</code>, <code>ORDER BY</code>, fungsi agregasi, <code>GROUP BY</code>, <code>HAVING</code>, dan <em>subquery</em> untuk menjawab pertanyaan pada data biologis.</li>
+          <li>Memeriksa kardinalitas, nilai <code>NULL</code>, dan pertambahan baris, kemudian menginterpretasikan hasil <em>query</em> sesuai cakupan dataset.</li>
+        </ol>
+      </section>
+      <section aria-labelledby="pendahuluan">
+        <h2 id="pendahuluan">Pendahuluan</h2>
+        <p>Pada Pertemuan 4, mahasiswa telah mempelajari perintah SQL dasar untuk membuat struktur serta menambahkan, membaca, mengubah, dan menghapus data. Pertemuan 5 melanjutkan kemampuan tersebut dengan menggunakan <em>query</em> untuk menghubungkan dan merangkum informasi dari beberapa tabel.</p>
+        <p>Praktikum menggunakan basis data BioSQLite yang memuat data genom, RNA-seq, mutagenesis, anotasi <em>Gene Ontology</em>, dan <em>pathway Plasmodium falciparum</em>. Basis data dipulihkan dari berkas cadangan PostgreSQL yang disediakan sehingga mahasiswa dapat langsung bekerja dengan dataset yang saling berhubungan.</p>
+        <p>Setiap pertanyaan diterjemahkan menjadi pilihan tabel, kolom pencocokan, kondisi penyaringan, jenis penggabungan, dan bentuk hasil yang diperlukan. Mahasiswa kemudian membandingkan hasil <em>query</em> dengan prediksi serta menafsirkan hasil sesuai cakupan dataset. <em>Screenshot</em> digunakan sebagai bukti pelaksanaan, sedangkan penjelasan tertulis menunjukkan pemahaman terhadap hasil.</p>
+      </section>
+      <section class="module-section" aria-labelledby="modul-pertemuan-05">
+        <div class="module-heading">
+          <div><p class="eyebrow">MODUL PRAKTIKUM</p><h2 id="modul-pertemuan-05">Pertemuan 05</h2></div>
+          <a class="module-link" href="assets/modules/pertemuan-05.pdf" target="_blank" rel="noopener">Buka PDF</a>
+        </div>
+        <div class="pdf-viewer">
+          <iframe src="assets/modules/pertemuan-05.pdf" title="Modul Praktikum Pertemuan 05: SQL Lanjut dan Query Biologis" loading="lazy"></iframe>
+        </div>
+      </section>
+    </article>
+    <footer>Program Studi Bioinformatika &middot; FMIPA &middot; IPB University</footer>
+  </main>
+  <script src="script.js?v=global-ui-1"></script>
+</body>
+</html>
