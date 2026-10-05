@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pencarian Data Biologis dan Penghubungan Hasil dengan Basis Data Lokal | BIF1323</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="style.css?v=materi-7" /><link rel="stylesheet" href="module.css?v=module-3" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Lewati navigasi</a><button class="menu-button" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  <aside id="sidebar" class="sidebar">
+    <a class="site-title" href="index.html"><span class="site-mark" aria-hidden="true"></span><span class="site-brand"><strong>Program Studi Bioinformatika</strong><small>Fakultas Matematika dan Ilmu Pengetahuan Alam<br />IPB University</small></span></a>
+    <label class="search-box" for="navigation-search"><span class="visually-hidden">Cari navigasi</span><input id="navigation-search" type="search" placeholder="Cari materi" autocomplete="off" /><span aria-hidden="true">/</span></label><p id="no-results" class="no-results" hidden>Menu tidak ditemukan.</p>
+<nav class="course-nav" aria-label="Navigasi praktikum"><a data-search="beranda home" href="index.html">Beranda</a><a data-search="staff professor asisten pengajar kontak" href="staff.html">Staff</a><a class="active" aria-current="page" data-search="materi modul pertemuan" href="materi.html">Materi Praktikum</a><a data-search="proyek kelompok" href="proyek.html">Proyek Kelompok</a><a data-search="tools referensi drawio postgresql" href="referensi.html">Referensi dan Tools</a><a data-search="kalender jadwal" href="kalender.html">Kalender</a></nav>
+    <div class="sidebar-footer"><a href="https://bioinformatika.ipb.ac.id/" target="_blank" rel="noopener">Web Bioinformatika IPB University</a><span>BIF1323</span></div>
+  </aside>
+  <main id="content" class="content">
+    <article>
+      <header class="page-header"><p class="breadcrumb"><a href="materi.html">MATERI</a> / PERTEMUAN 07</p><h1>Pencarian Data Biologis dan Penghubungan Hasil dengan Basis Data Lokal</h1><p class="lead">Menelusuri rekaman biologis daring, menjalankan BLASTP, dan menghubungkan hasil pencarian dengan data lokal di PostgreSQL.</p></header>
+      <section aria-labelledby="tujuan-praktikum">
+        <h2 id="tujuan-praktikum">Tujuan Praktikum</h2>
+        <ol class="learning-objectives">
+          <li>Menelusuri hubungan antara <em>identifier</em> gen lokal dan rekaman gen, transkrip, serta protein pada repositori biologis.</li>
+          <li>Mengambil dan memverifikasi sekuens protein dalam format FASTA sebagai masukan pencarian.</li>
+          <li>Menjalankan BLASTP, membaca ukuran kemiripan sekuens, dan memeriksa konteks fitur melalui <em>genome browser</em>.</li>
+          <li>Menyimpan sumber dan hasil pencarian dalam PostgreSQL, lalu menghubungkannya dengan data lokal menggunakan SQL.</li>
+        </ol>
+      </section>
+      <section aria-labelledby="pendahuluan">
+        <h2 id="pendahuluan">Pendahuluan</h2>
+        <p>Database hasil Pertemuan 5 menyimpan profil gen dan fitur genomik sebagai salinan data pada suatu keadaan tertentu. Rekaman pada repositori daring dapat memiliki <em>identifier</em>, versi anotasi, atau informasi yang lebih baru. Karena itu, hubungan antara data lokal dan rekaman daring perlu diperiksa menggunakan sumber dan bukti yang dapat ditelusuri.</p>
+        <p>Pada praktikum ini, satu <em>identifier</em> gen lokal ditelusuri ke rekaman gen, transkrip, dan protein. Sekuens protein diambil dalam format FASTA, digunakan sebagai <em>query</em> BLASTP, lalu konteks genomiknya diperiksa melalui <em>genome browser</em>. Sumber, parameter, hasil pencarian, dan status pemeriksaan disimpan pada schema <code>mg07</code> di PostgreSQL dan dihubungkan kembali dengan data lokal menggunakan <code>JOIN</code>.</p>
+      </section>
+      <section class="module-section" aria-labelledby="modul-pertemuan-07">
+        <div class="module-heading">
+          <div><p class="eyebrow">MODUL PRAKTIKUM</p><h2 id="modul-pertemuan-07">Pertemuan 07</h2></div>
+          <a class="module-link" href="assets/modules/pertemuan-07.pdf" target="_blank" rel="noopener">Buka PDF</a>
+        </div>
+        <div class="pdf-viewer">
+          <iframe src="assets/modules/pertemuan-07.pdf" title="Modul Praktikum Pertemuan 07: Pencarian Data Biologis dan Penghubungan Hasil dengan Basis Data Lokal" loading="lazy"></iframe>
+        </div>
+      </section>
+    </article>
+    <footer>Program Studi Bioinformatika &middot; FMIPA &middot; IPB University</footer>
+  </main>
+  <script src="script.js?v=global-ui-1"></script>
+</body>
+</html>
